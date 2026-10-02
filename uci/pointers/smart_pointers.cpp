@@ -13,16 +13,16 @@ int main(){
 
 std::unique_ptr<int> a{new int};
 *a = 4;
+
+
+
 }
 
 
 void foo (std::unique_ptr<int> q){
-
-
     *q = 6;
 }
 
 void bar(){
-
 
 }
