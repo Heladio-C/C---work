@@ -1,4 +1,4 @@
-#include "test.h"
+//#include "test.h"
 #include <iostream>
 
 #include <random>
@@ -18,8 +18,10 @@ int number1 = 4;
 int* number2 = &number1;
 
 
-std::cout << "This will give the value of number 1: " <<  *number2 << std::endl;
-std::cout << "This will give the address of the address it's pointing to " << number2 << std::endl;
+std::cout << "\nUsing *number2 will give the value of number 1: " <<  *number2 << std::endl;
+std::cout << "Using number2 will give the address of the address it's pointing to " << number2 << std::endl;
+std::cout << "Using &number2 will give you the address of the pointer itself: " << &number2 << std::endl;
+
 
 
 
@@ -38,6 +40,7 @@ int d = *b;
 
 
 std::cout << "The current value of b is : " << *b << std::endl;
+std::cout << b;
 
 c = 5;
 
@@ -53,7 +56,7 @@ b = nullptr;
 //here we will make a reference to the pointer of b, d becomes an alias for the pointer b
 //any changes make to d will affect b and vice versa
 
-int*& d = b;
+//int*& d = b;
 
 
 
